@@ -1,0 +1,431 @@
+[{
+    "customerId": "1001",
+    "firstName": "John",
+    "lastName": "Smith",
+    "dob": "1996-09-21",
+    "address":
+    {
+        "streetAddress": "37 Bell Estate",
+        "city": "Toronto",
+        "province": "Ontario",
+        "postalCode": "M1LOG5"
+    },
+    "phoneNumber": "646 555-467",
+    "email": "johnsmith@gmail.com"   
+},
+
+{
+    "customerId": "1002",
+    "firstName": "Byan",
+    "lastName": "Dorich",
+    "dob": "1993-04-05",
+    "address":
+    {
+        "streetAddress": "12 victoia park",
+        "city": "Toronto",
+        "province": "London",
+        "postalCode": "M1NOI5"
+    },
+    "phoneNumber": "646 555-467",
+    "email": "johnsmith@gmail.com"   
+},
+
+{
+    "customerId": "1003",
+    "firstName": "Bob",
+    "lastName": "Miller",
+    "dob": "1988-11-12",
+    "address": {
+      "streetAddress": "456 Elm St",
+      "city": "Los Angeles",
+      "state": "California",
+      "postalCode": "90001"
+    },
+    "phoneNumber": "310-555-5678",
+    "email": "bob.miller@gmail.com"
+  },
+
+
+  {
+    "customerId": "1004",
+    "firstName": "Charlie",
+    "lastName": "Davis",
+    "dob": "1995-07-30",
+    "address": {
+      "streetAddress": "789 Oak St",
+      "city": "Chicago",
+      "state": "Illinois",
+      "postalCode": "60601"
+    },
+    "phoneNumber":"312-555-6789",
+    "email": "charlie.davis@gmail.com"
+  },
+
+
+  {
+    "customerId": "1005",
+    "firstName": "David",
+    "lastName": "Wilson",
+    "dob": "1982-03-17",
+    "address": {
+      "streetAddress": "101 Pine St",
+      "city": "San Francisco",
+      "state": "California",
+      "postalCode": "94101"
+    },
+    "phoneNumber": "415-555-8901",
+    "email": "david.wilson@gmail.com"
+  },
+
+
+  {
+    "customerId": "1006",
+    "firstName": "Emily",
+    "lastName": "Taylor",
+    "dob": "1990-05-29",
+    "address": {
+      "streetAddress": "202 Maple St",
+      "city": "Seattle",
+      "state": "Washington",
+      "postalCode": "98101"
+    },
+    "phoneNumber": "206-555-2345",
+    "email": "emily.taylor@gmail.com"
+  },
+
+
+  {
+    "customerId": "1007",
+    "firstName": "Frank",
+    "lastName": "Anderson",
+    "dob": "1976-12-03",
+    "address": {
+      "streetAddress": "303 Cedar St",
+      "city": "Dallas",
+      "state": "Texas",
+      "postalCode": "75201"
+    },
+    "phoneNumber": "214-555-6789",
+    "email": "frank.anderson@gmail.com"
+  },
+
+
+  {
+    "customerId": "1008",
+    "firstName": "Grace",
+    "lastName": "Martinez",
+    "dob": "1999-02-14",
+    "address": {
+      "streetAddress": "404 Walnut St",
+      "city": "Miami",
+      "state": "Florida",
+      "postalCode": "33101"
+    },
+    "phoneNumber": "305-555-7890",
+    "email": "grace.martinez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1009",
+    "firstName": "Henry",
+    "lastName": "Garcia",
+    "dob": "1987-08-09",
+    "address": {
+      "streetAddress": "505 Cherry St",
+      "city": "Houston",
+      "state": "Texas",
+      "postalCode": "77001"
+    },
+    "phoneNumber": "713-555-1234",
+    "email": "henry.garcia@gmail.com"
+  },
+
+
+  {
+    "customerId": "1010",
+    "firstName": "Ivy",
+    "lastName": "Lopez",
+    "dob": "1993-01-25",
+    "address": {
+      "streetAddress": "606 Pine St",
+      "city": "Atlanta",
+      "state": "Georgia",
+      "postalCode": "30301"
+    },
+    "phoneNumber": "404-555-5678",
+    "email": "ivy.lopez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1011",
+    "firstName": "Jack",
+    "lastName": "Hernandez",
+    "dob": "1982-06-18",
+    "address": {
+      "streetAddress": "707 Elm St",
+      "city": "Phoenix",
+      "state": "Arizona",
+      "postalCode": "85001"
+    },
+    "phoneNumber": "602-555-8901",
+    "email": "jack.hernandez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1012",
+    "firstName": "Katie",
+    "lastName": "Young",
+    "dob": "1991-10-07",
+    "address": {
+      "streetAddress": "808 Oak St",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "postalCode": "02101"
+    },
+    "phoneNumber": "617-555-2345",
+    "email": "katie.young@gmail.com"
+  },
+
+
+  {
+    "customerId": "1013",
+    "firstName": "Liam",
+    "lastName": "Lee",
+    "dob": "1989-04-01",
+    "address": {
+      "streetAddress": "909 Maple St",
+      "city": "Denver",
+      "state": "Colorado",
+      "postalCode": "80201"
+    },
+    "phoneNumber": "303-555-6789",
+    "email": "liam.lee@gmail.com"
+  },
+
+
+  {
+    "customerId": "1014",
+    "firstName": "Mia",
+    "lastName": "King",
+    "dob": "1986-11-24",
+    "address": {
+      "streetAddress": "1010 Cedar St",
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "postalCode": "19101"
+    },
+    "phoneNumber": "215-555-1234",
+    "email": "mia.king@gmail.com"
+  },
+
+
+  {
+    "customerId": "1015",
+    "firstName": "Noah",
+    "lastName": "Wright",
+    "dob": "1983-07-11",
+    "address": {
+      "streetAddress": "1111 Walnut St",
+      "city": "Detroit",
+      "state": "Michigan",
+      "postalCode": "48201"
+    },
+    "phoneNumber": "313-555-5678",
+    "email": "noah.wright@gmail.com"
+  },
+
+
+  {
+    "customerId": "1016",
+    "firstName": "Olivia",
+    "lastName": "Adams",
+    "dob": "1988-04-30",
+    "address": {
+      "streetAddress": "1212 Cherry St",
+      "city": "Minneapolis",
+      "state": "Minnesota",
+      "postalCode": "55401"
+    },
+    "phoneNumber": "612-555-8901",
+    "email": "olivia.adams@gmail.com"
+  },
+
+
+  {
+    "customerId": "1017",
+    "firstName": "Peter",
+    "lastName": "Perez",
+    "dob": "1987-02-14",
+    "address": {
+      "streetAddress": "1313 Pine St",
+      "city": "San Antonio",
+      "state": "Texas",
+      "postalCode": "78201"
+    },
+    "phoneNumber": "210-555-2345",
+    "email": "peter.perez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1018",
+    "firstName": "Quinn",
+    "lastName": "Gonzalez",
+    "dob": "1992-12-25",
+    "address": {
+      "streetAddress": "1414 Elm St",
+      "city": "San Diego",
+      "state": "California",
+      "postalCode": "92101"
+    },
+    "phoneNumber": "619-555-6789",
+    "email": "quinn.gonzalez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1019",
+    "firstName": "Ryan",
+    "lastName": "Rodriguez",
+    "dob": "1995-09-18",
+    "address": {
+      "streetAddress": "1515 Oak St",
+      "city": "Orlando",
+      "state": "Florida",
+      "postalCode": "32801"
+    },
+    "phoneNumber": "407-555-1234",
+    "email": "ryan.rodriguez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1020",
+    "firstName": "Sophia",
+    "lastName": "Hernandez",
+    "dob": "1986-03-07",
+    "address": {
+      "streetAddress": "1616 Maple St",
+      "city": "Portland",
+      "state": "Oregon",
+      "postalCode": "97201"
+    },
+    "phoneNumber": "503-555-5678",
+    "email": "sophia.hernandez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1021",
+    "firstName": "Thomas",
+    "lastName": "Lopez",
+    "dob": "1989-08-22",
+    "address": {
+      "streetAddress": "1717 Cedar St",
+      "city": "Austin",
+      "state": "Texas",
+      "postalCode": "78701"
+    },
+    "phoneNumber": "512-555-8901",
+    "email": "thomas.lopez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1022",
+    "firstName": "Uma",
+    "lastName": "Chavez",
+    "dob": "1991-04-10",
+    "address": {
+      "streetAddress": "1818 Walnut St",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "postalCode": "37201"
+    },
+    "phoneNumber": "615-555-2345",
+    "email": "uma.chavez@gmail.com"
+  },
+
+
+  {
+    "customerId": "1023",
+    "firstName": "Vincent",
+    "lastName": "Nguyen",
+    "dob": "1994-10-03",
+    "address": {
+      "streetAddress": "1919 Cherry St",
+      "city": "Charlotte",
+      "state": "North Carolina",
+      "postalCode": "28201"
+    },
+    "phoneNumber": "704-555-6789",
+    "email": "vincent.nguyen@gmail.com"
+  },
+
+
+  {
+    "customerId": "1024",
+    "firstName": "Wendy",
+    "lastName": "Kim",
+    "dob": "1996-12-28",
+    "address": {
+      "streetAddress": "2020 Elm St",
+      "city": "Las Vegas",
+      "state": "Nevada",
+      "postalCode": "89101"
+    },
+    "phoneNumber": "702-555-1234",
+    "email": "wendy.kim@gmail.com"
+  },
+
+
+  {
+    "customerId": "1025",
+    "firstName": "Xavier",
+    "lastName": "Patel",
+    "dob": "1993-05-17",
+    "address": {
+      "streetAddress": "2121 Oak St",
+      "city": "Indianapolis",
+      "state": "Indiana",
+      "postalCode": "46201"
+    },
+    "phoneNumber": "317-555-5678",
+    "email": "xavier.patel@gmail.com"
+  },
+
+
+  {
+    "customerId": "1026",
+    "firstName": "Yara",
+    "lastName": "Singh",
+    "dob": "1995-08-08",
+    "address": {
+      "streetAddress": "2222 Maple St",
+      "city": "Raleigh",
+      "state": "North Carolina",
+      "postalCode": "27601"
+    },
+    "phoneNumber": "919-555-8901",
+    "email": "yara.singh@gmail.com"
+  },
+  
+  {
+    "customerId": "1027",
+    "firstName": "Zachary",
+    "lastName": "Gomez",
+    "dob": "1988-02-20",
+    "address": {
+      "streetAddress": "2323 Cedar St",
+      "city": "Salt Lake City",
+      "state": "Utah",
+      "postalCode": "84101"
+    },
+    "phoneNumber": "801-555-2345",
+    "email": "zachary.gomez@gmail.com"
+  }
+
+]

@@ -1,0 +1,377 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .h2,
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .hr-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      text-decoration: none;
+      background-color: #90e3f7;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: #c30101;
+      border-radius: 5%;
+      text-align: center;
+
+    }
+
+    .hr-container-inner {
+      width: 33.33%;
+      height: 700px;
+      overflow: hidden;
+      padding: 0px 5px;
+    }
+
+    .hr-container-title {
+      text-align: center;
+      background-color: #00ac00;
+      color: white;
+      line-height: 25px;
+      display: flow-root;
+    }
+
+    .hr-container-details {
+      height: 600px;
+      max-height: 600px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      scroll-behavior: smooth;
+    }
+
+    .hr-container-details.prediction {
+      background: #E3E6E6;
+      padding: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      border: 1px solid #fff;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .title-block-left {
+      text-align: center;
+    }
+
+    .feed-carousel-shelf {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .feed-carousel-card {
+      height: 50%;
+      flex: 0 0 30%;
+      max-width: 30%;
+      padding: 5px;
+    }
+
+    .feed-image {
+      width: 75%;
+      height: 50%;
+    }
+
+    .product-image {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+    }
+
+    .item-description {
+      font-size: small;
+    }
+
+    .item-description span {
+      font-weight: 600;
+    }
+
+    .fresh-shoveler {
+      margin: 10px 0;
+      background-color: #fff;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background-color: #ff5b0f;
+      white-space:nowrap;
+      color: #fff ;
+      border: none;
+      border-radius: 30px;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      border: none;
+      background-color: #ff7e42;
+      color: #fff ;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>HOME</h1>
+  </header>
+
+  <nav>
+    <a href="LandingPage">Home</a>
+    <a href="Inventory">Inventory</a>
+    <a href="OnlineOrders">Online Orders</a>
+    <a href="ProductOrders">Product Orders</a>
+    <a href="LowInventory">Low Inventory</a>
+    <a href="Sales">Sales</a>
+    <a href="Prediction">Prediction</a>
+    <a href="Contact">Contact</a>
+  </nav>
+
+  <div class="hr-container">
+    <div class="hr-container-inner">
+      <div class="hr-container-title">
+        <h3>Pending Orders</h3>
+      </div>
+      <div class="hr-container-details">
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Ordered QTY</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for order in pending_orders %}
+            <tr>
+              <td>{{ order.order_id }}</td>
+              <td>
+                <ul>
+                  {% for item in order.order_items %}
+                  <li>{{ item.product_id }}</li>
+                  {% endfor %}
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  {% for item in order.order_items %}
+                  <li>{{ item.product_name }}</li>
+                  {% endfor %}
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  {% for item in order.order_items %}
+                  <li>{{ item.ordered_quantity }}</li>
+                  {% endfor %}
+                </ul>
+              </td>
+            </tr>
+            {% endfor%}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="hr-container-inner">
+      <div class="hr-container-title">
+        <h3>Low Inventory</h3>
+      </div>
+      <div class="hr-container-details">
+        <table>
+          <thead>
+            <tr>
+              <th>SKU</th>
+              <th>Name</th>
+              <th>Size</th>
+              <th>Color</th>
+              <th>QTY</th>
+              <th>Order Now</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in low_inventory%}
+            <tr>
+              <td>{{ item.product_id }}</td>
+              <td>{{ item.product_name }}</td>
+              <td>{{ item.size }}</td>
+              <td>{{ item.color }}</td>
+              <td>{{ item.quantity }}</td>
+              <td>
+                <button type="button" class="btn btn-primary" 
+                  onclick="showOrderDetails('{{ item.product_id }}')">
+                  Order Now
+                </button>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="hr-container-inner">
+      <div class="hr-container-title">
+        <h3>Prediction</h3>
+      </div>
+      <div class="hr-container-details prediction">
+        {% for category in sell_categories %}
+        <div class="best-seller-section">
+          <div class="best-seller-wrapper">
+            <div class="fresh-shoveler">
+              <div class="section-title">
+                <h2 class="title-block-left">Best Sellers in {{ category }}</h2>
+              </div>
+              <div class="section-feed-carousel">
+                <div class="feed-carousel-viewport">
+                  <div class="feed-carousel-shelf">
+                    {% for item in sell_products %}
+                    {% if item.category == category %}
+                    <div class="feed-carousel-card">
+                      <div class="feed-list-item">
+                        <div class="feed-image">
+                          <img class="product-image" src={{ item.product_image }}>
+                        </div>
+                        <div class="item-description">
+                          <div>
+                            <label>Name: </label><span>{{ item.product_name }}</span>
+                          </div>
+                          <div>
+                            <label>Order Qty: </label><span>{{ item.ordered_quantity }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        {% if less_selling is not null %}
+        <div class="best-seller-section">
+          <div class="best-seller-wrapper">
+            <div class="fresh-shoveler">
+              <div class="section-title">
+                <h2 class="title-block-left">Less Selling Products</h2>
+              </div>
+              <div class="section-feed-carousel">
+                <div class="feed-carousel-viewport">
+                  <div class="feed-carousel-shelf">
+                    {% for item in less_selling %}
+                    <div class="feed-carousel-card">
+                      <div class="feed-list-item">
+                        <div class="feed-image">
+                          <img class="product-image" src={{ item.product_image }}>
+                        </div>
+                        <div class="item-description">
+                          <div>
+                            <label>Name: </label><span>{{ item.product_name }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showOrderDetails(productId) {
+      // Construct the URL with the product ID as a query parameter
+      var url = 'ProductOrders?productId=' + encodeURIComponent(productId);
+      
+      // Redirect the user to the target page with the product ID included in the URL
+      window.location.href = url;
+    }
+  </script>
+</body>
+
+</html>
