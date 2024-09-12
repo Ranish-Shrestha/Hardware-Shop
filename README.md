@@ -9,7 +9,7 @@
 
 ## Database setup
 
-- python Database/seed_TechArmy.py
+- python Database/seed_data.py
 
 ## Run Project
 
